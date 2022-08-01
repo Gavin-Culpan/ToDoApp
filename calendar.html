@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="CSS/calendar.css" rel="stylesheet">
+    <script async src="JS/calendar.js"></script>
+  </head>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li class="dropdown" style="float:right;">
+        <a href="javascript:void(0)" class="dropbtn">
+        <picture>
+            <img src="Images\search.png" alt="Search" id="search">
+          </picture>
+        </a>
+        <div class="dropdown-content">
+        <a href="calendar.html">Calendar</a>
+        <a href="about.html">About</a>
+        <a href="contacts.html">Contact Us</a>
+        </div>
+      </li>
+      </ul>
+      
+  </header>
+  
+  <body>
+  
+  <div class="container-fluid">
+    <!-- Background animation-->
+      <div class="background">
+         <div class="cube"></div>
+         <div class="cube"></div>
+         <div class="cube"></div>
+         <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    <!-- End of Background animtion-->
+  <body>
+    <div id="cal-wrap">
+      <!-- (A) PERIOD SELECTOR -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+      </div>
+
+      <!-- (B) CALENDAR -->
+      <div id="cal-container"></div>
+
+      <!-- (C) EVENT FORM -->
+      <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+      </form>
+    </div>
+  </body>
+</html>
